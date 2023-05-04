@@ -1,7 +1,7 @@
-def main():
-    print("Welcome to the email slicer ")
-    print("")
+print("Welcome to the email slicer ")
 
+def main():
+    print("")
     email_input = input("Enter your email address: ")
 
     # Slice user name and domain
@@ -14,10 +14,13 @@ def main():
 
 main()
 
-print("Do you want to enter another email address: y-'Yes', n-'No'")
-user_response = input("")
-if user_response == 'y':
-  main()
-elif user_response == 'n':
-  print('Have a nice day!')
+while True:
+  print("Do you want to enter another email address: y-'Yes', n-'No'")
+  user_response = input("")
+  if user_response == 'y':
+    main()
+  elif user_response == 'n':
+    print('Have a nice day')
+    break
+
 
