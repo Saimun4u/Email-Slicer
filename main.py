@@ -13,3 +13,11 @@ def main():
     print(f"Extension: {extension}")
 
 main()
+
+print("Do you want to enter another email address: y-'Yes', n-'No'")
+user_response = input("")
+if user_response == 'y':
+  main()
+elif user_response == 'n':
+  print('Have a nice day!')
+
